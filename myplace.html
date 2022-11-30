@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공대생 백家 사이트</title>
+    <style>
+        @font-face {
+            font-family: 'ONE-Mobile-POP';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'ONE-Mobile-Title';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul, li {
+            list-style: none;
+        }
+
+        body{
+            background-color:  rgb(115, 185, 252);
+            margin: 0 auto;
+        }
+
+        div{
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        img {
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        button{
+            border: 1px solid skyblue;
+            border-radius: 15px;
+            background-color: white;
+            color: black;
+            display: block;
+            font-family: 'ONE-Mobile-POP';
+            width: 60%;
+            height: 70px;
+            transition: all 0.2s linear;
+            font-size: x-large;
+        }
+
+        button:hover{
+            background-color: rgb(161, 255, 255);
+            color: yellow;
+            transform: scale(1.2);
+        }
+
+        #myPR{
+            background-color: white;
+            border: 1px solid skyblue;
+            border-radius: 15px;
+            width: 55%;
+            padding: 1%;
+            
+        }
+
+        p{
+            text-align: left;
+            font-family: 'ONE-Mobile-Title';
+            font-size: 20px;
+            padding: 1px 1px 1px 1px;
+        }
+    </style>
+    <script type="text/javascript"> 
+        var bDisplay = true; 
+        function showMyPR(){ 	
+            var con = document.getElementById("myPR"); 
+            var btn = document.getElementById("PRBT"); 
+            if(con.style.display=='none'){ 		
+                con.style.display = 'block';
+                btn.innerHTML="프로필 숨기기" 	
+            }else{ 		
+                con.style.display = 'none';
+                btn.innerHTML="프로필 보기"  	
+            } 
+        } 
+    </script> 
+</head>
+<body>
+    <img src="https://cdn.discordapp.com/attachments/551371669315256330/1047543226426478604/f30ebe7105994454.png">
+    <img src="https://cdn.discordapp.com/attachments/551371669315256330/1047535701702492182/3.png">
+    <div>
+        <button id="PRBT"onclick="showMyPR();">프로필 보기</button>
+    </div>
+    <div id="myPR" style="display: none;">
+        <p>
+            이름 : 백건우 <br><br>
+            나이 : 2001년생 <br><br>
+            혈액형 : A형 <br><br>
+            MBTI : ENFP <br><br>
+            좋아하는 것 : 사람, 칭찬, 게임, 여행 <br><br>
+            싫어하는 것 : 나를 짜증나게 하는 모든 것 <br><br>
+            현재 장래 희망 : 게임 디렉터<br><br>
+            현재 투입 가능 업무 : 영상 편집, 보고서 작업, 간단한 웹 코딩<br><br><br>
+            현재 학력<br><br>
+            세일고등학교 졸업<br><br>
+            성결대학교 미디어소프트웨어학과 재학<br><br><br>
+        </p>
+    </div>
+    <br><br><br>
+    <div>
+        <button onclick="location.href='https://ctee.kr/place/engineer100'">크티(블로그) 바로가기</button>
+    </div>
+    <br><br><br>
+    <div>
+        <button onclick="location.href='https://www.instagram.com/eng.std_100/'">인스타 바로가기</button>
+    </div>
+    <br><br><br>
+    <div>
+        <button onclick="location.href='https://github.com/BaekGunWoo1119/'">깃허브 바로가기</button>
+    </div>
+    <br><br><br>
+</body>
+</html>
