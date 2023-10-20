@@ -407,12 +407,20 @@
 
             var por = document.getElementById("my-portfolios");
 
-            if (width > height) {
+             if (width > height) {
                 body.style.flexDirection = 'row';
                 por.style.width = '60%';
                 por.style.left ='50px';
                 por.style.top ='-250px';
                 por.style.overflow = 'hidden';
+
+                if (width > (height * 1.5)) {
+                    body.style.flexDirection = 'row';
+                    por.style.width = '60%';
+                    por.style.left ='50px';
+                    por.style.top ='0';
+                    por.style.overflow = 'hidden';
+                }
             } else {
                 body.style.flexDirection = 'column';
                 por.style.width = '320px';
